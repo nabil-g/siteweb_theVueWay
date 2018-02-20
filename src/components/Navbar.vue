@@ -6,12 +6,12 @@
       </span>
 
       <span class="rightLinks">
-        <li class="right" id="about"><router-link id="button4" href="#">À propos</router-link></li>
-        <li class="right" id="github"><router-link title="GitHub" class="fa fa-github" href="https://github.com/nabil-g" target="_blank"></router-link></li>
-        <li class="right" id="linkedin"><router-link title="LinkedIn" class="fa fa-linkedin" href="https://www.linkedin.com/in/nabil-ghedjati-5051a2117" target="_blank"></router-link></li>
-        <li class="right" id="insta"><router-link title="Instagram" class="fa fa-instagram" href="https://www.instagram.com/nabil.ghedjati/" target="_blank"></router-link></li>
-        <li class="right" id="twitter"><router-link title="Twitter" class="fa fa-twitter"  href="https://twitter.com/Nabil63" target="_blank"></router-link></li>
-        <li class="right" id="mail"><router-link title="Contact" class="fa fa-envelope" href="#"></router-link></li>
+        <li class="right" id="about"><router-link id="button4" to="/about">À propos</router-link></li>
+        <li class="right" id="github"><a title="GitHub" class="fa fa-github" href="https://github.com/nabil-g" target="_blank"></a></li>
+        <li class="right" id="linkedin"><a title="LinkedIn" class="fa fa-linkedin" href="https://www.linkedin.com/in/nabil-ghedjati-5051a2117" target="_blank"></a></li>
+        <li class="right" id="insta"><a title="Instagram" class="fa fa-instagram" href="https://www.instagram.com/nabil.ghedjati/" target="_blank"></a></li>
+        <li class="right" id="twitter"><a title="Twitter" class="fa fa-twitter"  href="https://twitter.com/Nabil63" target="_blank"></a></li>
+        <li class="right" id="mail"><router-link title="Contact" class="fa fa-envelope" to="/contact"></router-link></li>
       </span>
     </ul>
   </header>

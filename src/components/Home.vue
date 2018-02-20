@@ -10,7 +10,6 @@
 
 <script>
 
-// import Moment from 'moment'
 import { DateTime } from 'luxon'
 export default {
   name: 'Skills',
