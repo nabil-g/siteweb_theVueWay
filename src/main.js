@@ -3,6 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+// import FA from '@fortawesome/fontawesome'
+
 
 Vue.config.productionTip = false
 
