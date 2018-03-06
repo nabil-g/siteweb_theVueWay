@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'Skills',
+  name: 'Xp',
   data () {
     return {
       xpItems: [

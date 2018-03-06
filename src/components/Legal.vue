@@ -18,7 +18,7 @@
 <script>
     import { DateTime } from 'luxon'
     export default {
-        name: 'Skills',
+        name: 'Legal',
         data() {
             return {}
         },

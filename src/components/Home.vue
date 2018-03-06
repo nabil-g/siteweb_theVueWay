@@ -12,7 +12,7 @@
 
 import { DateTime } from 'luxon'
 export default {
-  name: 'Skills',
+  name: 'Home',
   data () {
     return {}
   },

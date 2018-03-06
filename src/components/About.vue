@@ -1,17 +1,17 @@
 <template>
     <div id="four" class="rubDiv">
         <h2>À propos</h2>
-        </br>
+        <br>
         <table>
             <tr>
                 <td class="date">Langues</td>
-                <td>Français (langue maternelle)</br>
+                <td>Français (langue maternelle)<br>
                     Anglais (correct)
                 </td>
             </tr>
             <tr>
                 <td class="date">Centres d'intérêts</td>
-                <td>Cinéma, nouvelles technologies, sports de montagne,</br>
+                <td>Cinéma, nouvelles technologies, sports de montagne,<br>
                     tennis, photographie, musique
                 </td>
             </tr>
@@ -24,7 +24,7 @@
 <script>
     import { DateTime } from 'luxon';
     export default {
-        name: 'Skills',
+        name: 'About',
         data() {
             return {}
         },

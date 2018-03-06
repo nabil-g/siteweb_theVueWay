@@ -4,7 +4,7 @@
     <h2>Contact</h2>
 
       <p id="reponseMsg"></p>
-      <form id="form" name="contactform" accept-charset="UTF-8" onsubmit="return verifForm(this)" method="POST">
+      <form id="form" name="contactform" accept-charset="UTF-8">
         <input type="text" id="name" name="name" placeholder="Votre nom" value="">
         <input type="email" id="mailaddress" name="mailaddress" placeholder="Votre adresse e-mail" value=""  >
         <textarea id="message" type="text" name="message" rows="6" placeholder="Votre message (entre 2 et 1500 caractères)" value=""></textarea>
@@ -16,21 +16,26 @@
       </form>
 
     <p class="credits">
-      &copy; <?php echo date('Y'); ?> Nabil Ghedjati.
+      &copy; {{ currentYear }} Nabil Ghedjati.
     </p>
 
   </div>
 </template>
 
 <script>
-export default {
-  name: 'Skills',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
+    import { DateTime } from 'luxon';
+    export default {
+        name: 'Contact',
+        data() {
+            return {}
+        },
+        computed : {
+            currentYear () {
+                return DateTime.local().year;
+            }
+        }
     }
-  }
-}
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
