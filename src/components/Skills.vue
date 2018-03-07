@@ -24,11 +24,11 @@
             <a title="Linux" href="https://www.linuxfoundation.org/" target="_blank"
                class="devicon-linux-plain colored"></a>
             <a title="Apache Cordova" href="https://cordova.apache.org/" target="_blank"><img
-                    src="assets/cordova_64.png" alt="Cordova Icon"/></a>
+                    src="static/cordova_64.png" alt="Cordova Icon"/></a>
         </div>
         <div class="logoSkills">
             <a title="Node.JS" href="https://nodejs.org/en/" target="_blank" class="devicon-nodejs-plain colored"></a>
-            <a title="Arduino" href="https://www.arduino.cc/" target="_blank"><img src="assets/arduino.svg"
+            <a title="Arduino" href="https://www.arduino.cc/" target="_blank"><img src="static/arduino.svg"
                                                                                    alt="Arduino Icon"
                                                                                    style="width:58px"/></a>
             <a title="Vue.js" href="https://vuejs.org/" target="_blank" class="devicon-vuejs-plain colored"></a>

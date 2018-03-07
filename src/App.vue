@@ -19,5 +19,10 @@
 </script>
 
 <style>
-
+    body {
+        background: no-repeat url("/static/clouds2.jpg") fixed;
+        background-size: cover;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1em;
+    }
 </style>
