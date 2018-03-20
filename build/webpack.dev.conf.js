@@ -46,6 +46,9 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   },
   plugins: [
     new webpack.DefinePlugin({
+        "BACKEND": JSON.stringify("http://localhost/siteweb/vue/")
+    }),
+    new webpack.DefinePlugin({
       'process.env': require('../config/dev.env')
     }),
     new webpack.HotModuleReplacementPlugin(),

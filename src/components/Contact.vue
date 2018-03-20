@@ -52,7 +52,7 @@
                     this.errors[0] = true;
                 }
                 let regex = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
-                if (!regex.test(this.mailaddress)) {
+                if (!regex.test(this.mailAddress)) {
                     this.errors[1] = true;
                 }
                 if (this.message.length < 2 || this.message.length > 1500) {
@@ -62,7 +62,7 @@
                     this.errors[3] = true;
                     return false;
                 }
-                this.$http.post('/static/contact.php', {name: this.name, mailAddress: this.mailAddress,message: this.message});
+                this.$http.post(__BACKEND__ + 'static/contact.php', {name: this.name, mailAddress: this.mailAddress,message: this.message});
 
             }
 
@@ -129,6 +129,17 @@
         margin: 0 auto;
         font-family: 'Raleway', sans-serif;
         font-weight: bold;
+    }
+
+    #sendbutton:focus {
+        background-color: #006666;
+        color: #66ffff;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+    }
+
+    #sendbutton:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
     .sendingRequest{
