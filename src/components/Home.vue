@@ -1,9 +1,8 @@
 <template>
     <div id="welcome" class="rubDiv">
-        <h2 class="hw" id="hwDesktop"></h2>
-        <span class=".hw">
+        <h2 class="hw" id="hwDesktop">
             <vue-typer text="Hello world." :repeat="0"></vue-typer>
-        </span>
+        </h2>
         <p id="msg">Bienvenue ! Je suis un jeune <strong>développeur Web</strong> de {{ age }} ans,</br>
             plein d'idées et de motivation. Consultez mon parcours et n'hésitez pas à me contacter.
         </p>
@@ -38,14 +37,6 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-    #welcome {
-        height: 66%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 
     .hw {
         font-family: 'Inconsolata', sans-serif;

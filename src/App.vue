@@ -73,8 +73,10 @@
     .rubrique {
         position: relative;
         padding: 50px;
+        /*height: 481px;*/
         height: auto;
-        transition: height ease 2s;
+        /*max-height:800px;*/
+        transition: max-height ease 2s;
         width: 960px;
         border-radius: 10px;
         margin: auto;
@@ -108,6 +110,10 @@
     }
 
     .rubrique .rubDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         height: 100%;
         width: 100%;
     }
