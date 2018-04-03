@@ -1,0 +1,9 @@
+node_modules/
+dist/
+src/.idea/
+.idea/
+*.log
+*.swp
+*.iml
+package-lock.json
+db.php
