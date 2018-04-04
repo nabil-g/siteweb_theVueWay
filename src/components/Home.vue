@@ -1,26 +1,24 @@
 <template>
     <div id="welcome" class="rubDiv">
         <h2 class="hw" id="hwDesktop">
-            <vue-typer text="Hello world." :repeat="0"></vue-typer>
+            Hello world.<span class="blinkingCaret">█</span>
         </h2>
+        <br>
         <p id="msg">Bienvenue ! Je suis un jeune <strong>développeur Web</strong> de {{ age }} ans,</br>
             plein d'idées et de motivation. Consultez mon parcours et n'hésitez pas à me contacter.
         </p>
-        <p><a class="downloadlink" href="static/cv_nabil_ghedjati_2017.pdf" type="application/pdf" target="_blank">Télécharger le CV</a>
-        </p>
+        <br>
+        <div><a class="downloadlink" href="static/cv_nabil_ghedjati_2017.pdf" type="application/pdf" target="_blank">Télécharger le CV</a>
+        </div>
     </div>
 </template>
 
 <script>
 
     import {DateTime} from 'luxon'
-    import {VueTyper} from 'vue-typer'
 
     export default {
         name: 'Home',
-        components: {
-            VueTyper
-        },
         data() {
             return {}
         },
@@ -35,13 +33,21 @@
     }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
     .hw {
         font-family: 'Inconsolata', sans-serif;
     }
 
+    .blinkingCaret{
+        animation: blink 1s step-start 0.5s infinite;
+    }
+
+    @keyframes blink {
+        50%{
+            opacity: 0;
+        }
+    }
     .downloadlink {
         text-decoration: none;
         text-align: center;
@@ -85,4 +91,9 @@
         }
     }
 
+    @media screen and (max-width: 1024px) {
+        #downloadlink {
+            animation: none;
+        }
+    }
 </style>

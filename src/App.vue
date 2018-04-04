@@ -53,6 +53,68 @@
         text-decoration: none;
         color: white;
     }
+
+
+    #entrance {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 1);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-transition: ease;
+        transition: ease;
+    }
+
+
+    #grandTitre {
+        display: none;
+        font-family: 'Satisfy', sans-serif;
+        font-size: 5em;
+    }
+
+    #grandTitre a, #petitTitre a {
+        color: #D180C0;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        -webkit-animation: animtitre 5s infinite;
+        animation: animtitre 5s infinite;
+    }
+
+
+    @-webkit-keyframes animtitre {
+        from {
+            color: #61AFFC;
+        }
+        50% {
+            color: #009999;
+        }
+        to {
+            color: #61AFFC;
+        }
+    }
+
+
+    @keyframes animtitre {
+        from {
+            color: #61AFFC;
+        }
+        50% {
+            color: #009999;
+        }
+        to {
+            color: #61AFFC;
+        }
+    }
+
+
     body {
         background: no-repeat url("/static/clouds2.jpg") fixed;
         background-size: cover;
@@ -118,5 +180,61 @@
         width: 100%;
     }
 
+    @media screen and (min-width:1025px) {
+
+        .pace {
+            -webkit-pointer-events: none;
+            pointer-events: none;
+
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        .pace-inactive {
+            display: none;
+        }
+
+        .pace .pace-progress {
+            background: #29d;
+            position: fixed;
+            z-index: 2000;
+            top: 0;
+            right: 100%;
+            width: 100%;
+            height: 2px;
+        }
+    }
+
+    @media screen and (max-width:1024px) {
+
+        #entrance {
+            display: none;
+        }
+
+        body {
+            background: url('/static/clouds2_blur_mid.jpg');
+            background-attachment: scroll;
+            color: white !important;
+        }
+
+
+        .rubrique {
+            background: 0;
+            box-shadow: none;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .rubrique::before{
+            background: 0;
+        }
+
+
+    }
 
 </style>

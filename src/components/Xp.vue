@@ -1,6 +1,7 @@
 <template>
   <div id="two" class="rubDiv">
     <h2>Expérience</h2>
+    <br>
     <table>
       <tr v-for="item in xpItems">
         <td class="date">{{ item.date }}</td>

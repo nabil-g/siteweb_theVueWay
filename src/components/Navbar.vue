@@ -110,4 +110,46 @@
         border-bottom-right-radius: 7px;
     }
 
+    @media screen and (max-width:1024px) {
+        .navbar {
+            display: flex;
+        }
+        .navbar span li #button0 {
+            transition: none;
+        }
+        .navbar span li a {
+            transition: none;
+            color: white;
+        }
+        .navbar li a:hover {
+            color: none;
+        }
+    }
+
+    @media screen and (max-width:771px) {
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navbar .leftLinks {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navbar .rightLinks{
+            display: flex;
+            justify-content: center;
+        }
+
+        .router-link-active{
+            border-radius: 5px;
+        }
+
+
+    }
+
 </style>

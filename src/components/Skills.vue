@@ -2,6 +2,7 @@
 
     <div id="one" class="rubDiv">
         <h2>Compétences</h2>
+        <br>
         <div class="logoSkills" id="skills1">
             <a title="HTML5" href="https://www.w3.org/html/" target="_blank"
                class="devicon-html5-plain-wordmark colored"></a>
@@ -66,6 +67,15 @@
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+    }
+    .logoSkills a {
         font-size: 4.5em;
     }
+
+    @media screen and (max-width: 771px) {
+        .logoSkills a {
+            font-size: 3.5em;
+        }
+    }
+
 </style>

@@ -2,21 +2,25 @@
     <div id="six" class="rubDiv">
 
         <h2>Contact</h2>
-
+        <br>
         <p id="reponseMsg"></p>
         <form id="form" name="contactform" accept-charset="UTF-8" @submit="validateForm">
             <input :class="errors[0] ? 'errorField' : ''" type="text" id="name" name="name"
                    placeholder="Votre nom" v-model.lazy="name">
+            <br>
             <input :class="errors[1] ? 'errorField' : ''" type="email" id="mailaddress" name="mailaddress" placeholder="Votre adresse e-mail"
-                   v-model.lazy="mailAddress">
+            v-model.lazy="mailAddress">
+            <br>
             <textarea :class="errors[2] ? 'errorField' : ''" id="message" type="text" name="message" rows="6"
                       placeholder="Votre message (entre 2 et 1500 caractères)" v-model.lazy="message"></textarea>
+            <br>
             <p v-show="errors[3]" class="erreurForm">
                 Les champs marqués en rouge sont incomplets ou incorrects.
             </p>
+            <br>
             <button id="sendbutton" type="submit" name="send">Envoyer</button>
         </form>
-
+        <br>
         <p class="credits">
             &copy; {{ currentYear }} Nabil Ghedjati.
         </p>
@@ -62,7 +66,7 @@
                     this.errors[3] = true;
                     return false;
                 }
-                this.$http.post(__BACKEND__ + 'static/contact.php', {name: this.name, mailAddress: this.mailAddress,message: this.message});
+                this.$http.post(BACKEND + 'static/contact.php', {name: this.name, mailAddress: this.mailAddress,message: this.message});
 
             }
 
@@ -165,5 +169,15 @@
 
     .errorField {
         background-color: rgba(255,8,8,0.25);
+    }
+
+    @media screen and (max-width:771px) {
+        form {
+            width: 100%;
+        }
+
+        input, textarea{
+            width: 100%;
+        }
     }
 </style>

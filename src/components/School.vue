@@ -1,6 +1,7 @@
 <template>
     <div id="three" class="rubDiv">
         <h2>Formation</h2>
+        <br>
         <table>
             <tr v-for="h in history">
                 <td class="date">{{ h.date }}</td>
